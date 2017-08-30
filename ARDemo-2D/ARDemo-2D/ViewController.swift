@@ -62,7 +62,12 @@ extension ViewController: ARSKViewDelegate {
         // Create and configure a node for the anchor added to the view's session.
         let thredNode = SKSpriteNode(imageNamed: "demo_image")
         thredNode.size = CGSize(width: 100, height: 100)
-        return thredNode
+//        return thredNode
+        
+        let labelNode = SKLabelNode(text: "Jing Test")
+        labelNode.fontName = "AlNile-Bold"
+        labelNode.fontSize = 50
+        return labelNode
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {
